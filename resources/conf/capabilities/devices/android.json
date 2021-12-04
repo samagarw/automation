@@ -1,0 +1,44 @@
+{
+  "android": {
+    "common_caps": {
+      "project": "ecomtest.com",
+      "build": "UIAutomation-Test",
+      "name": "ecomtest.com",
+      "browserstack.debug": "true",
+      "browserstack.networkLogs": "true",
+      "browserstack.console": "verbose",
+      "browserstack.selenium_version": "4.0.0-rc-1",
+      "browserstack.appium_version" : "1.21.0"
+    },
+    "env_caps": [
+      {
+        "os": "android",
+        "os_version": "10.0",
+        "device": "Samsung Galaxy S20",
+        "realMobile": true,
+        "resolution": "360 x 800"
+      },
+      {
+        "os": "android",
+        "os_version": "11.0",
+        "device": "Samsung Galaxy S21 Ultra",
+        "realMobile": true,
+        "resolution": "360 x 800"
+      },
+      {
+        "os": "android",
+        "os_version": "9.0",
+        "device": "Samsung Galaxy S9 Plus",
+        "realMobile": true,
+        "resolution": "360 x 800"
+      },
+      {
+        "os": "android",
+        "os_version": "8.1",
+        "device": "Samsung Galaxy Note 9",
+        "realMobile": true,
+        "resolution": "360 x 640"
+      }
+    ]
+  }
+}

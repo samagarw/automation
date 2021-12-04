@@ -1,0 +1,47 @@
+{
+  "osx" : {
+    "common_caps": {
+      "project": "ecomtest.com",
+      "build": "UIAutomation-Test",
+      "name": "ecomtest.com",
+      "browserstack.debug": "true",
+      "browserstack.networkLogs": "true",
+      "browserstack.console": "verbose",
+      "browserstack.selenium_version": "4.0.0-rc-1"
+    },
+    "env_caps": [
+      {
+        "os": "OS X",
+        "os_version": "Big Sur",
+        "browser": "Chrome",
+        "browser_version": "92.0",
+        "resolution" : "1920x1080",
+        "browserstack.sendKeys": true
+      },
+      {
+        "os": "OS X",
+        "os_version": "Big Sur",
+        "browser": "Firefox",
+        "browser_version": "90.0",
+        "resolution" : "1920x1080",
+        "browserstack.sendKeys": true
+      },
+      {
+        "os": "OS X",
+        "os_version": "Big Sur",
+        "browser": "Edge",
+        "browser_version": "92.0",
+        "resolution" : "1920x1080",
+        "browserstack.sendKeys": true
+      },
+      {
+        "os": "OS X",
+        "os_version": "Big Sur",
+        "browser": "Safari",
+        "browser_version": "14.1",
+        "resolution" : "1920x1080",
+        "browserstack.selenium_version": "4.0.0-rc-1"
+      }
+    ]
+  }
+}

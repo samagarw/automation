@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration packages="com.epam.ta.reportportal.log4j.appender">
+    <Properties>
+        <Property name="LOG_LOC">logs</Property>
+        <Property name="MAX">1</Property>
+        <Property name="LOG_PATTERN">%d{yyyy.MM.dd HH:mm:ss.SSS} [%p] %c: %m%n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="FILE" fileName="${LOG_LOC}/main.log"
+                     filePattern="${LOG_LOC}/main.%i.log">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+
+            <Policies>
+                <OnStartupTriggeringPolicy />
+            </Policies>
+
+            <DefaultRolloverStrategy max="${MAX}" />
+        </RollingFile>
+
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+        </Console>
+        <ReportPortalLog4j2Appender name="ReportPortalAppender">
+            <PatternLayout
+                    pattern="%d [%t] %-5level %logger{36} - %msg%n%throwable"/>
+        </ReportPortalLog4j2Appender>
+    </Appenders>
+
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="FILE" />
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="ReportPortalAppender"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

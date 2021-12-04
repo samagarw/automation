@@ -1,0 +1,40 @@
+{
+  "ios": {
+    "common_caps": {
+      "project": "ecomtest.com",
+      "build": "UIAutomation-Test",
+      "name": "ecomtest.com",
+      "browserstack.debug": "true",
+      "browserstack.networkLogs": "true",
+      "browserstack.console": "verbose",
+      "browserstack.appium_version" : "1.21.0",
+      "browserstack.selenium_version": "4.0.0-rc-1"
+    },
+    "env_caps": [
+      {
+        "device": "iPhone 12",
+        "os_version": "14",
+        "realMobile": true,
+        "resolution": "414 x 896"
+      },
+      {
+        "device": "iPhone 11 Pro",
+        "os_version": "13",
+        "realMobile": true,
+        "resolution": "375 x 812"
+      },
+      {
+        "device": "iPhone XS",
+        "os_version": "12",
+        "realMobile": true,
+        "resolution": "375 x 667"
+      },
+      {
+        "device": "iPhone X",
+        "os_version": "11",
+        "realMobile": true,
+        "resolution": "414 x 736"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "windows" : {
+    "common_caps": {
+      "project": "ecomtest.com",
+      "build": "UIAutomation-Test",
+      "name": "ecomtest.com",
+      "browserstack.debug": "true",
+      "browserstack.networkLogs": "true",
+      "browserstack.console": "verbose",
+      "browserstack.selenium_version": "4.0.0-rc-1"
+    },
+    "env_caps": [
+      {
+        "os": "Windows",
+        "os_version": "10",
+        "browser": "Chrome",
+        "browser_version": "92.0",
+        "resolution" : "1920x1080",
+        "browserstack.sendKeys": true
+      },
+      {
+        "os": "Windows",
+        "os_version": "10",
+        "browser": "Firefox",
+        "browser_version": "90.0",
+        "resolution" : "1920x1080",
+        "browserstack.sendKeys": true
+      },
+      {
+        "os": "Windows",
+        "os_version": "10",
+        "browser": "Edge",
+        "browser_version": "92.0",
+        "resolution" : "1920x1080",
+        "browserstack.sendKeys": true
+      },
+      {
+        "os": "Windows",
+        "os_version": "10",
+        "browser": "IE",
+        "browser_version": "11.0",
+        "browserstack.selenium_version": "4.0.0-rc-1",
+        "resolution" : "1920x1080",
+        "browserstack.sendKeys": true
+      }
+    ]
+  }
+}
